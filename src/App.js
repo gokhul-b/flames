@@ -45,7 +45,7 @@ function App() {
           </div>
           <div className="md:w-2/3">
             <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700  focus:outline-none focus:shadow-outline"
               id="yourName"
               type="text"
               placeholder="Your name"
@@ -67,7 +67,7 @@ function App() {
           </div>
           <div className="md:w-2/3">
             <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700  focus:outline-none focus:shadow-outline"
               id="crushName"
               type="text"
               placeholder="Crush name"
