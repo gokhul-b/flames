@@ -29,7 +29,7 @@ function App() {
       <form className="mx-auto h-full w-full max-w-md">
         <div className="flex justify-center items-center">
           <div className="pt-10 pb-10">
-            <p className="text-3xl text-purple-500 font-medium font-poppins">
+            <p className="text-3xl text-gray-900 font-medium font-poppins">
               FLAMES
             </p>
           </div>
@@ -82,7 +82,7 @@ function App() {
           <div className="md:w-1/3 pt-5 pb-10 md:pl-8">
             <div className="md:w-2/3">
               <button
-                className="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                className="shadow bg-gray-900 hover:bg-[#374151] focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
                 type="button"
                 onClick={handleClick}
               >
@@ -92,7 +92,7 @@ function App() {
           </div>
           <div className="w-full h-40 flex items-center justify-center">
             <div>
-              <p className="text-3xl text-purple-500 font-medium font-poppins">
+              <p className="text-3xl text-gray-900 font-medium font-poppins">
                 {r}
               </p>
             </div>
@@ -100,7 +100,7 @@ function App() {
           <div className="md:w-1/3 pt-10 md:pl-10">
             <div className="md:w-2/3">
               <button
-                className="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                className="shadow bg-gray-900 hover:bg-[#374151] focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
                 type="button"
                 onClick={handleReset}
               >
