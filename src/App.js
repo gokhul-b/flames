@@ -25,7 +25,7 @@ function App() {
   const jsConfetti = new JSConfetti();
 
   return (
-    <div className="h-screen w-50 flex bg-[url('./img/8318.jpg')]">
+    <div className="h-screen w-50 flex sm:bg-[url('./img/8318.jpg')]">
       <form className="mx-auto h-full w-full max-w-md">
         <div className="flex justify-center items-center">
           <div className="pt-10 pb-10">
@@ -43,9 +43,9 @@ function App() {
               Your name
             </label>
           </div>
-          <div className="md:w-2/3">
+          <div className="md:w-2/3 flex justify-center">
             <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700  focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none border rounded w-full mx-5 sm:mx-0 py-2 px-3 text-gray-700  focus:outline-none focus:shadow-outline"
               id="yourName"
               type="text"
               placeholder="Your name"
@@ -65,9 +65,9 @@ function App() {
               Crush name
             </label>
           </div>
-          <div className="md:w-2/3">
+          <div className="md:w-2/3 flex justify-center">
             <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700  focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none border rounded w-full mx-5 sm:mx-0 py-2 px-3 text-gray-700  focus:outline-none focus:shadow-outline"
               id="crushName"
               type="text"
               placeholder="Crush name"
