@@ -19,8 +19,8 @@ function App({ addEntry }) {
           crushName: name2,
           result: relationship(name1, name2).label,
         };
-        await addEntry(obj);
         jsConfetti.addConfetti();
+        await addEntry(obj);
       } else {
         document.getElementById("yourName").focus();
         alert("Enter the valid input");
