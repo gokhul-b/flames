@@ -11,11 +11,17 @@ function App() {
 
   const handleClick = () => {
     if (name1 && name2) {
-      // setR(relationship(name1, name2));
-      setR(relationship(name1, name2).label);
-      setT(relationship(name1, name2).text);
-      jsConfetti.addConfetti();
-      jsConfetti.addConfetti();
+      if (isNaN(name1) && isNaN(name2)) {
+        setR(relationship(name1, name2).label);
+        setT(relationship(name1, name2).text);
+        jsConfetti.addConfetti();
+        jsConfetti.addConfetti();
+      } else {
+        document.getElementById("yourName").focus();
+        alert("Enter the valid input");
+        setName1("");
+        setName2("");
+      }
     }
   };
   const handleReset = () => {
