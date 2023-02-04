@@ -4,17 +4,6 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-import { createClient } from "@supabase/supabase-js";
-
-const supabase = createClient(
-  process.env.REACT_APP_SUPABASE_URI,
-  process.env.REACT_APP_SUPABASE_ANON
-);
-
-async function addEntry(obj) {
-  const { data, error } = await supabase.from("flames").insert([obj]);
-}
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>

@@ -14,13 +14,8 @@ function App({ addEntry }) {
       if (isNaN(name1) && isNaN(name2)) {
         setR(relationship(name1, name2).label);
         setT(relationship(name1, name2).text);
-        let obj = {
-          yourName: name1,
-          crushName: name2,
-          result: relationship(name1, name2).label,
-        };
+
         jsConfetti.addConfetti();
-        await addEntry(obj);
       } else {
         document.getElementById("yourName").focus();
         alert("Enter the valid input");
@@ -29,6 +24,7 @@ function App({ addEntry }) {
       }
     }
   };
+
   const handleReset = () => {
     document.getElementById("yourName").focus();
     setName1("");
