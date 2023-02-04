@@ -23,6 +23,7 @@ function App() {
     setName1("");
     setName2("");
     setR("");
+    setT("");
   };
 
   const jsConfetti = new JSConfetti();
