@@ -7,10 +7,13 @@ function App() {
   const [name1, setName1] = useState("");
   const [name2, setName2] = useState("");
   const [r, setR] = useState("");
+  const [t, setT] = useState("");
 
   const handleClick = () => {
     if (name1 && name2) {
-      setR(relationship(name1, name2));
+      // setR(relationship(name1, name2));
+      setR(relationship(name1, name2).label);
+      setT(relationship(name1, name2).text);
       jsConfetti.addConfetti();
       jsConfetti.addConfetti();
     }
@@ -25,7 +28,7 @@ function App() {
   const jsConfetti = new JSConfetti();
 
   return (
-    <div className="h-screen w-50 flex sm:bg-[url('./img/8318.jpg')]">
+    <div className="h-screen w-50 flex sm:bg-[url('./img/8318.jpg')] overflow-hidden sm:overflow-auto">
       <form className="mx-auto h-full w-full max-w-md">
         <div className="flex justify-center items-center">
           <div className="pt-10 pb-10">
@@ -47,7 +50,7 @@ function App() {
             <input
               className="shadow appearance-none border rounded w-full mx-5 sm:mx-0 py-2 px-3 text-gray-700  focus:outline-none focus:shadow-outline"
               id="yourName"
-              type="text"
+              type="search"
               placeholder="Your name"
               value={name1}
               onChange={(e) => {
@@ -65,11 +68,11 @@ function App() {
               Crush name
             </label>
           </div>
-          <div className="md:w-2/3 flex justify-center">
+          <div className="md:w-2/3 flex justify-center items-center">
             <input
               className="shadow appearance-none border rounded w-full mx-5 sm:mx-0 py-2 px-3 text-gray-700  focus:outline-none focus:shadow-outline"
               id="crushName"
-              type="text"
+              type="search"
               placeholder="Crush name"
               value={name2}
               onChange={(e) => {
@@ -91,9 +94,12 @@ function App() {
             </div>
           </div>
           <div className="w-full h-40 flex items-center justify-center">
-            <div>
+            <div className="text-center">
               <p className="text-3xl text-gray-900 font-medium font-poppins">
                 {r}
+              </p>
+              <p className="text-base text-gray-500 font-light font-poppins italic">
+                {t}
               </p>
             </div>
           </div>

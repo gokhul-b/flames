@@ -37,12 +37,27 @@ export function relationship(name1, name2) {
   }
 
   let bond = {
-    F: "Friends",
-    L: "Lovers",
-    A: "Affection",
-    M: "Marriage",
-    E: "Enemies",
-    S: "Sibling",
+    F: {
+      label: "Friends",
+      text: '"You have someone who has the courage to tell you what shit you are, and still be loving and nice to you"',
+    },
+    L: { label: "Lovers", text: '"All you need is love and you have it"' },
+    A: {
+      label: "Affection",
+      text: '"Your love for him/her is unconditional and eternal."',
+    },
+    M: {
+      label: "Marriage",
+      text: '"Wishing you a lifetime of love and happiness on your upcoming marriage."',
+    },
+    E: {
+      label: "Enemies",
+      text: '"Do not underestimate negative relationships. You have a deep bond with those you hate, fear, or envy. Time to dissolve that"',
+    },
+    S: {
+      label: "Sibling",
+      text: '"Having a sibling is a blessing, cherish the memories and make more as you grow old together. Enjoy the journey of brotherhood/sisterhood."',
+    },
   };
 
   return bond[flames];
