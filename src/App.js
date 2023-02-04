@@ -9,7 +9,7 @@ function App({ addEntry }) {
   const [r, setR] = useState("");
   const [t, setT] = useState("");
 
-  const handleClick = async () => {
+  const handleClick =  () => {
     if (name1 && name2) {
       if (isNaN(name1) && isNaN(name2)) {
         setR(relationship(name1, name2).label);
