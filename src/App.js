@@ -98,7 +98,7 @@ function App() {
               <p className="text-3xl text-gray-900 font-medium font-poppins">
                 {r}
               </p>
-              <p className="text-base text-gray-500 font-light font-poppins italic">
+              <p className="text-base text-gray-500 font-light font-poppins italic  mt-4">
                 {t}
               </p>
             </div>
