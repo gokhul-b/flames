@@ -3,17 +3,23 @@ import JSConfetti from "js-confetti";
 import { relationship } from "./flames";
 import { useState } from "react";
 
-function App() {
+function App({ addEntry }) {
   const [name1, setName1] = useState("");
   const [name2, setName2] = useState("");
   const [r, setR] = useState("");
   const [t, setT] = useState("");
 
-  const handleClick = () => {
+  const handleClick = async () => {
     if (name1 && name2) {
       if (isNaN(name1) && isNaN(name2)) {
         setR(relationship(name1, name2).label);
         setT(relationship(name1, name2).text);
+        let obj = {
+          yourName: name1,
+          crushName: name2,
+          result: relationship(name1, name2).label,
+        };
+        await addEntry(obj);
         jsConfetti.addConfetti();
       } else {
         document.getElementById("yourName").focus();
