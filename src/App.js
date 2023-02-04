@@ -28,7 +28,7 @@ function App() {
   const jsConfetti = new JSConfetti();
 
   return (
-    <div className="h-screen w-50 flex sm:bg-[url('./img/8318.jpg')] overflow-hidden sm:overflow-auto">
+    <div className="h-screen w-50 flex sm:bg-[url('./img/8318.jpg')] overflow-hidden">
       <form className="mx-auto h-full w-full max-w-md">
         <div className="flex justify-center items-center">
           <div className="pt-10 pb-10">
