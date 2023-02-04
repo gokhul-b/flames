@@ -15,7 +15,6 @@ function App() {
         setR(relationship(name1, name2).label);
         setT(relationship(name1, name2).text);
         jsConfetti.addConfetti();
-        jsConfetti.addConfetti();
       } else {
         document.getElementById("yourName").focus();
         alert("Enter the valid input");
